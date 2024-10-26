@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA_DTU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DTU GPA Calculator</h1>
+    </header>
+    <main>
+        <div>
+            <div class="tt">Phần Trăm</div>
+            <div class="tt">Điểm</div>
+            <div class="tt">Tổng</div>
+        </div>
+        <section class="inputv">
+            <div>
+                <input type="number" id="p1" oninput="cal()">
+                <input type="number" id="p1" oninput="cal()"> 
+                <input type="number" id="p1" disabled> 
+            </div>
+            <div>
+                <input type="number" id="p1" oninput="cal()">
+                <input type="number" id="p1" oninput="cal()">
+                <input type="number" id="p1" disabled> 
+            </div>
+            <div>
+                <input type="number" id="p1" oninput="cal()">
+                <input type="number" id="p1" oninput="cal()">
+                <input type="number" id="p1" disabled> 
+            </div>
+            <div>
+                <input type="number" id="p1" oninput="cal()">
+                <input type="number" id="p1" oninput="cal()">
+                <input type="number" id="p1" disabled> 
+            </div>
+            <div>
+                <input type="number" id="p1" oninput="cal()">
+                <input type="number" id="p1" oninput="cal()"> 
+                <input type="number" id="p1" disabled> 
+            </div>
+            <div>
+                <input type="number" id="p1" oninput="cal()">
+                <input type="number" id="p1" oninput="cal()"> 
+                <input type="number" id="p1" disabled> 
+            </div>
+            <div>
+                <input type="number" id="p1" oninput="cal()">
+                <input type="number" id="p1" oninput="cal()"> 
+                <input type="number" id="p1" disabled> 
+            </div>
+        </section>
+    </main>
+    <section class="result">
+        <div>
+            <h1>GPA</h1>
+            <input type="number" id="rs" disabled>
+        </div>
+        <div>
+            <label for="lang-select">Mục tiêu điểm của bạn:</label>
+            <select name="lang" id="lang-select" oninput="gpa()">
+                <option value=""></option>
+                <option value="9.45">A+</option>
+                <option value="8.45">A</option>
+                <option value="7.95">A-</option>
+                <option value="7.45">B+</option>
+                <option value="6.95">B</option>
+                <option value="6.45">B-</option>
+                <option value="5.95">C+</option>
+                <option value="5.45">C</option>
+                <option value="4.45">C-</option>
+                <option value="3.95">D</option>
+            </select>
+        </div>
+    </section>
+    <button id="btn" onclick="cgpa()">Tính điểm</button>
+    <script src="script.js"></script>
+</body>
+</html>
