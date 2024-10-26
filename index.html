@@ -18,38 +18,38 @@
         </div>
         <section class="inputv">
             <div>
-                <input type="number" id="p1" oninput="cal()">
-                <input type="number" id="p1" oninput="cal()"> 
+                <input type="number" id="p1" oninput="cal(), gpa1(), overp(this)">
+                <input type="number" id="p1" oninput="cal(), gpa1(), overd(this)"> 
                 <input type="number" id="p1" disabled> 
             </div>
             <div>
-                <input type="number" id="p1" oninput="cal()">
-                <input type="number" id="p1" oninput="cal()">
+                <input type="number" id="p1" oninput="cal(), gpa1(), overp(this)">
+                <input type="number" id="p1" oninput="cal(), gpa1(), overd(this)">
                 <input type="number" id="p1" disabled> 
             </div>
             <div>
-                <input type="number" id="p1" oninput="cal()">
-                <input type="number" id="p1" oninput="cal()">
+                <input type="number" id="p1" oninput="cal(), gpa1(), overp(this)">
+                <input type="number" id="p1" oninput="cal(), gpa1(), overd(this)">
                 <input type="number" id="p1" disabled> 
             </div>
             <div>
-                <input type="number" id="p1" oninput="cal()">
-                <input type="number" id="p1" oninput="cal()">
+                <input type="number" id="p1" oninput="cal(), gpa1(), overp(this)">
+                <input type="number" id="p1" oninput="cal(), gpa1(), overd(this)">
                 <input type="number" id="p1" disabled> 
             </div>
             <div>
-                <input type="number" id="p1" oninput="cal()">
-                <input type="number" id="p1" oninput="cal()"> 
+                <input type="number" id="p1" oninput="cal(), gpa1(), overp(this)">
+                <input type="number" id="p1" oninput="cal(), gpa1(), overd(this)"> 
                 <input type="number" id="p1" disabled> 
             </div>
             <div>
-                <input type="number" id="p1" oninput="cal()">
-                <input type="number" id="p1" oninput="cal()"> 
+                <input type="number" id="p1" oninput="cal(), gpa1(), overp(this)">
+                <input type="number" id="p1" oninput="cal(), gpa1(), overd(this)"> 
                 <input type="number" id="p1" disabled> 
             </div>
             <div>
-                <input type="number" id="p1" oninput="cal()">
-                <input type="number" id="p1" oninput="cal()"> 
+                <input type="number" id="p1" oninput="cal(), gpa1(), overp(this)">
+                <input type="number" id="p1" oninput="cal(), gpa1(), overd(this)"> 
                 <input type="number" id="p1" disabled> 
             </div>
         </section>
@@ -61,7 +61,7 @@
         </div>
         <div>
             <label for="lang-select">Mục tiêu điểm của bạn:</label>
-            <select name="lang" id="lang-select" oninput="gpa()">
+            <select name="lang" id="lang-select" onchange="gpa(this)" oninput="gpa1()">
                 <option value=""></option>
                 <option value="9.45">A+</option>
                 <option value="8.45">A</option>
@@ -77,6 +77,10 @@
         </div>
     </section>
     <button id="btn" onclick="cgpa()">Tính điểm</button>
+    <dialog id="md" onclick="exit()">
+        <h1>Thông báo</h1>
+        <p id="redi"></p>
+    </dialog>
     <script src="script.js"></script>
 </body>
 </html>
